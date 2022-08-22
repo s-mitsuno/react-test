@@ -62,7 +62,7 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            AI推進部
+            ICT Team
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

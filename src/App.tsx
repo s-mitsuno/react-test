@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Album from "./components/album";
 import BasicGrid from "./components/basicgrid";
 import Header from "./components/header";
 import { Swipeimage } from "./components/swaipeimage";
@@ -10,6 +11,7 @@ function App() {
       <Header />
       {/* <Maincontent /> */}
       <Swipeimage />
+      <Album />
       {/* <BasicGrid /> */}
     </div>
   );

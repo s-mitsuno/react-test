@@ -1,7 +1,7 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import { Autoplay, Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -14,14 +14,15 @@ import { Swp01 } from "../swiperitems/swp01";
 export const Swipeimage = () => {
   return (
     <Swiper
-      modules={[Autoplay, Pagination]}
+      modules={[Autoplay, Pagination, Navigation]}
+      navigation
       spaceBetween={1}
       slidesPerView={1}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
       centeredSlides={true}
       autoplay={{ delay: 3000 }}
-      pagination={{ clickable: true }}
+      pagination={{ clickable: false }}
     >
       <SwiperSlide>
         <Swp01 />

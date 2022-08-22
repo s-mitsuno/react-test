@@ -5,9 +5,16 @@ export const Swp01 = () => {
   const stl = { color: "#ed4134" };
 
   return (
-    <div style={stl}>
-      <div></div>
-      <img src={mainImage} alt="1" width="100%" height="370px" />
+    <div>
+      <div className="parent" style={stl}>
+        <img src={mainImage} alt="1" width="100%" height="370px" />
+        <div className="child">
+          <h1> カッコいいフォントの文字列</h1>
+        </div>
+      </div>
+      {/* <div className="child">
+        <h1> カッコいいフォントの文字列</h1>
+      </div> */}
     </div>
   );
 };
